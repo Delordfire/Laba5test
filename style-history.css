@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(222, 184, 135);
+    animation: AnimBody 1.5s ease-in;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.historyP {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+float: none;
+    width: 45%;
+    background-color: rgb(206, 167, 117);
+
+
+}
+
+h1 {
+    font-size: 3lh;
+    color: rgb(0, 0, 0);
+    animation: fadeIn 2s ease-in;
+}
+
+p {
+    font-size: 1lh;
+    color: black;
+    animation: fadeIn 2.5s ease-in;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    animation: fadeIn 3s ease-in;
+}
+
+.menu li {
+    margin-bottom: 8px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 20px;
+    animation: fadeIn 3.5s ease-in;
+}
+
+
+@keyframes AnimBody {
+    from {
+        background-color: rgb(206, 167, 117);
+        opacity: 0;
+    }
+    to {
+        background-color: rgb(206, 167, 117);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.wrapper {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.historyP {
+    margin-top: 20px;
+}
+
+.menu a {
+    font-size: large;
+    background-color: none;
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: rgb(151, 117, 72);
+    text-decoration: none;
+}
+
+.PasswordHis {
+    height: 25%;
+    width: 30%;
+}

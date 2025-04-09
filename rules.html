@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Laba1WEB</title>
+        <link rel="stylesheet" href="style-rules.css">    
+</head>
+    <body>
+        <div class="header"><h1>Як створити безпечний пароль</h1>
+          <div class="menu">
+            <nav>
+              <ul>
+                <li><a href="index.html" target="_blank">Головна сторінка</a></li>
+                <li><a href="history.html" target="_blank">Історія паролів</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+
+        
+        
+
+        <div class="List">
+            <ul>
+                <p>📌Пароль має містити літери верхнього та нижнього регістру</p>
+                <p>🔒Додай цифри та спеціальні символи</p>
+                <p>🧠Не використовуй особисту інформацію</p>
+            </ul>
+        </div> 
+        
+        <div class="table">
+            <table border="1">
+                <tr>
+                  <th>Тип паролю</th>
+                  <th>Надійність</th>
+                </tr>
+                <tr>
+                  <td>123456</td>
+                  <td>Низька</td>
+                </tr>
+                <tr>
+                  <td>Qw!9zB#3</td>
+                  <td>Висока</td>
+                </tr>
+              </table>
+        </div> <br>
+
+        <input type="text" id="passwordInput" placeholder="Введіть пароль для перевірки">
+<button onclick="checkPassword()">Перевірити</button>
+<p id="strengthResult"></p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m7OAKG0wgsc?si=mZDRViwdMu3PWKf9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+         
+         <hr>
+         <footer>
+           <p>Автор: Король Данило , група: (1БС-24б)</p>
+         </footer>
+         
+         <script>function checkPassword() {
+          const pwd = document.getElementById("passwordInput").value;
+          let strength = "Слабкий";
+          if (pwd.length >= 8 && /[A-Z]/.test(pwd) && /\d/.test(pwd) && /[!@#$%^&*]/.test(pwd)) {
+            strength = "Надійний";
+          } else if (pwd.length >= 6) {
+            strength = "Середній";
+          }
+          document.getElementById("strengthResult").innerText = `Надійність пароля: ${strength}`;
+        }
+        </script>
+    </body> 
+</html>
